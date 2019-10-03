@@ -1,0 +1,131 @@
+/* css Zen Garden default style v1.02 */
+/* css released under Creative Commons License - http://creativecommons.org/licenses/by-nc-sa/1.0/  */
+
+/* This file based on 'Tranquille' by Dave Shea */
+/* You may use this file as a foundation for any new work, but you may find it easier to start from scratch. */
+/* Not all elements are defined in this file, so you'll most likely want to refer to the xhtml as well. */
+
+/* Your images should be linked as if the CSS file sits in the same folder as the images. ie. no paths. */
+
+
+/* basic elements */
+html {
+	margin: 0;
+	padding: 0;
+	background-color: lightblue;
+	background-image: url(./pattern-3088082_1280.jpg);
+	background-blend-mode: multiply;
+	background-attachment: fixed;
+	}
+body { 
+	margin: 0; 
+	padding: 0;
+	}
+p { 
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	padding: 1em;
+	}
+h3 { 
+	margin: 2ch;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	}
+h3:before {
+	font-size: 70%;
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+	content: "ZEN";
+	border-right: darkred dotted 2px;
+	padding-right: 1ch;
+	margin-right: 1ch;
+}
+a:link { 
+	text-decoration: none;
+	}
+a:visited { 
+	text-decoration: none;
+	}
+a:hover, a:focus, a:active {
+	color: red;
+	border: 1px solid red;
+	border-radius: 3px;
+	}
+ul li {
+	list-style-type: none;
+	margin: 0;
+	padding: 1rem;
+	text-align: center;
+}
+ul {
+	margin: 0;
+	padding: 1rem;
+}
+/* specific divs */
+header[role="banner"] {
+	line-height: 3em;
+	background-color: rgba(15, 92, 15, 0.808);
+	background-image: url(./green-leaf-176722_640.jpg);
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	font-size: 120%;
+	padding: 1em;
+	margin: 1em;
+	color: white;
+	border: darkslategray solid 2px;
+	box-shadow: 0 0 1em black;
+	text-shadow: 0 0 1em navy;
+
+}
+.summary, .preamble, .explanation, .participation, .benefits, .requirements {
+	background-color: rgba(233, 241, 248, 0.836);
+	margin: 1rem;
+	border-radius: 3px;
+}
+.intro { 
+	display: grid;
+	grid-template-columns: auto auto;
+	}
+.preamble {
+	grid-column: span 2;
+	}
+.supporting {	
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	}
+.requirements {
+	grid-column: span 3;
+}
+footer { 
+	background-color: white;
+	grid-column: span 3;
+	text-align: center;
+	line-height: 3em;
+	width: 100%;
+	}
+.sidebar .wrapper { 
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	background: repeating-linear-gradient(45deg, aliceblue, aliceblue 8px, transparent 8px, transparent 16px);
+	}
+.sidebar .wrapper div {
+	background-color:rgba(200, 229, 238, 0.9);
+	margin: 1em;
+	border-radius: 1em;
+}
+.pepper {
+	color: red;
+	text-shadow: 0 0 1px rgb(80, 0, 0);
+}
+@media(max-width:600px){
+	.intro, .summary {
+		grid-column: span 2;
+	}
+	.explanation, .participation, .benefits {
+		grid-column: span 3;
+	}
+	.sidebar .wrapper {
+		grid-template-columns: 100%;
+	}
+	header[role="banner"] {
+		background-image: unset;
+		margin: 0;
+		grid-column: span 2;
+	}
+}
