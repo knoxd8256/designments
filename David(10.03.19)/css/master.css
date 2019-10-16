@@ -5,9 +5,25 @@ body, html {
     font-size: 14pt;
 }
 
+body {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto auto;
+}
+
+header {
+    background-color: #FC7;
+}
+
+h1 {
+    margin: 1rem;
+    line-height: 200%;
+    color: #007;
+}
 .circles {
-    height: 1000px;
-    width: 1000px;
+    background-color: #5B4;
+    height: 1500px;
+    width: 1500px;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
@@ -28,7 +44,7 @@ div.circle {
 }
 div.circle:hover{
     clip-path: circle(100%);
-    border-radius: 2px;
+    border-radius: 1em;
     transition-duration: .2s;
     background-color: black;
     color: white;
