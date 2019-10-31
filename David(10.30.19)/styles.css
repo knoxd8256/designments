@@ -1,0 +1,99 @@
+figure {
+    position: relative;
+    top: 200px;
+    left: 200px;
+    width: 70px;
+    overflow: hidden;
+    background-color: aliceblue;
+    height: 80px;
+}
+img {
+    width: 1076px;
+    height: 1860px;
+    position: absolute;
+    left: -715px;
+    top: -202px;
+    animation: jump .8s step-end 0s normal infinite;
+}
+#nextboi img {
+    top: -25px;
+    animation: zap 1s step-end 0s normal infinite;
+
+}
+#nextboi {
+    left: 400px;
+}
+@keyframes jump {
+    0% {
+        left: -210px;
+    }
+    15% {
+        left: -260px;
+    }
+    20% {
+        left: -310px;
+    }
+    30% {
+        left: -360px;
+    }
+    40% {
+        left: -430px;
+
+    }
+    50% {
+        left: -490px;
+    }
+    60% {
+        left: -540px;
+    }
+    70% {
+        left: -590px;
+    }
+    80% {
+        left: -650px;
+    }
+    90% {
+        left: -715px;
+    }
+    100% {
+        left: -780px;
+    }
+}
+
+
+@keyframes zap {
+    0% {
+        left: -210px;
+    }
+    10% {
+        left: -240px;
+    }
+    20% {
+        left: -305px;
+    }
+    30% {
+        left: -370px;
+    }
+    40% {
+        left: -435px;
+
+    }
+    50% {
+        left: -505px;
+    }
+    60% {
+        left: -570px;
+    }
+    70% {
+        left: -640px;
+    }
+    80% {
+        left: -710px;
+    }
+    90% {
+        left: -780px;
+    }
+    100% {
+        left: -780px;
+    }
+}
